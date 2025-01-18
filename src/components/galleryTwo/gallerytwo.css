@@ -1,0 +1,75 @@
+.grid-containerx {
+  display: grid;
+  grid-template-areas:
+    "image4 image5 image6"
+    "image7 image8 image8";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, minmax(1px, 487px));
+  column-gap: 1px;
+  row-gap: 1px;
+}
+
+.grid-tilex__textholder {
+  position: absolute;
+  color: white;
+  bottom: 100px;
+  width: 100%;
+}
+
+.grid-tilex:nth-child(1) {
+  grid-area: image4;
+  background-color: #e63036;
+}
+
+.grid-tilex:nth-child(2) {
+  grid-area: image5;
+  background-size: auto;
+  position: relative;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.grid-tilex:nth-child(3) {
+  grid-area: image6;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+
+.grid-tilex:nth-child(4) {
+  grid-area: image7;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+
+.grid-tilex:nth-child(5) {
+  grid-area: image8;
+  height: 100%;
+  width: 100%;
+}
+
+.grid-tilex img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(65%);
+}
+
+.grid-tilex {
+  height: 100%;
+}
+
+@media (max-width: 800px) {
+  .grid-containerx {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 0;
+  }
+
+  .grid-tilex {
+    border-bottom: 1px solid black;
+    background-image: none !important;
+  }
+}

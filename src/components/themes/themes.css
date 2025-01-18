@@ -1,0 +1,118 @@
+.spacer {
+  height: 240px;
+}
+
+.themes-section {
+  height: 200px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 40px;
+}
+
+.themes-section__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.themes-title {
+  font-size: 51px;
+  font-weight: 700;
+  line-height: 46px;
+  margin: 0;
+}
+
+.arrow-down__svg {
+  display: none;
+}
+
+.themes-labels {
+  display: flex;
+  gap: 16px;
+  font-family: "Raleway", serif;
+}
+
+.theme {
+  width: 83px;
+  height: 40px;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.themes-labels .theme {
+  font-family: Raleway;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 11.74px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: max-content;
+}
+
+.theme-1 {
+  background-color: #e2f1e8;
+}
+
+.theme-3 {
+  background-color: #f1dada;
+}
+
+.theme-5 {
+  background-color: #f1f1e2;
+}
+
+.theme-white {
+  background-color: #ffffff;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+  .spacer {
+    height: 136px;
+  }
+
+  .themes-section {
+    height: 190px;
+    padding: 24px 16px;
+    justify-content: center;
+  }
+
+  .themes-section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .themes-title {
+    font-size: 28px;
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .arrow-down__svg {
+    display: blocK;
+  }
+
+  .themes-labels {
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+}

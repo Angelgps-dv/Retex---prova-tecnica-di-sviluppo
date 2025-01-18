@@ -1,0 +1,164 @@
+.img-wrapper {
+  position: relative;
+  height: 25%;
+  background-size: cover;
+  filter: brightness(80%);
+}
+
+.img-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(65%);
+}
+
+.img-content {
+  z-index: 99;
+  width: 100%;
+  bottom: 0;
+  height: fit-content;
+  padding: 44px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.img-content-contain {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.img-content-contain .title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-content-contain .title-container .arrow {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.img-content-contain .title-banner-horizontal {
+  font-family: Anybody !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  line-height: 32px !important;
+  text-align: left !important;
+  text-underline-position: from-font !important;
+  text-decoration-skip-ink: none !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 3 !important;
+  overflow: hidden !important;
+}
+
+.img-content-banner {
+  padding: 25px 40px;
+  height: 100%;
+}
+
+.img-content-contain-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.img-content .badge {
+  color: black;
+  width: fit-content;
+  background-color: white;
+  padding: 4px 12px;
+  font-family: Raleway;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 11.74px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  border-radius: 4px;
+}
+
+.img-content .title {
+  font-family: Anybody;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 70%;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .img-content .title {
+    font-family: Anybody;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: black;
+  }
+
+  .avatar-title .avatar-name {
+    font-family: Anybody;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .img-content .avatar-container .avatar-title {
+    color: black !important;
+  }
+
+  .avatar-title .avatar-date {
+    font-family: Anybody;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+}
+
+.img-content .title-banner {
+  font-size: 18px;
+  line-height: 28px;
+  width: 100%;
+}
+
+.img-content .avatar-container {
+  display: flex;
+  gap: 16px;
+}
+
+.img-content .avatar-container .avatar-title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: white;
+  font-family: Anybody;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.img-content .avatar-container .avatar-img img {
+  border-radius: 9999px;
+  width: 48px;
+  height: 48px;
+}
